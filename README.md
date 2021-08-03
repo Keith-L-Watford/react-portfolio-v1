@@ -1,1 +1,1 @@
-# react-portfolio-v1
+# React Portfolio (version 1)
