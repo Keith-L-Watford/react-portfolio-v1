@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/app.css'
 import Header from './components/header.js'
 import Nav from './components/nav'
 import Projects from './components/projects'
