@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Header() {
     return(
-        <div>
-        </div>
+        <h1 id='myName'>
+            Keith L. Watford
+        </h1>
     );
 }
