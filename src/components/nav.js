@@ -4,76 +4,47 @@ import "../styles/nav.css";
 
 export default function Nav({ currentPage, handlePageChange }) {
   return (
-    // <ul>
-    //     <li>About Me</li>
-    //     <li>Projects</li>
-    //     {/* Maybe resume will have its own section, maybe in projects. idk */}
-    //     {/* <li>Resume</li> */}
-    //     <li>Contact Me</li>
-    // </ul>
-    <aside className="mdc-drawer">
-      <div className="mdc-drawer__header">
-        {/* <h3 className="mdc-drawer__title">Mail</h3>
-        <h6 className="mdc-drawer__subtitle">email@material.io</h6> */}
-      </div>
-      <div className="mdc-drawer__content">
-        <nav className="mdc-list">
-            {/* HOME */}
-            <a
-            href="#Home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
-            aria-current="page">
-            <span className="mdc-list-item__ripple"></span>
-            <i className="material-icons mdc-list-item__graphic" aria-hidden="true">
-                {/* change me */}
-              inbox
-            </i>
-            <span className="mdc-list-item__text">Home</span>
-          </a>
 
-            {/* ABOUT ME */}
-          <a
-          href="#AboutMe"
-           className={currentPage === 'AboutMe' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
-           onClick={() => handlePageChange('AboutMe')}
-            aria-current="page"
-          >
-            <span className="mdc-list-item__ripple"></span>
-            <i className="material-icons mdc-list-item__graphic" aria-hidden="true">
-                {/* change me */}
-              inbox
-            </i>
-            <span className="mdc-list-item__text">About Me</span>
-          </a>
-          {/* PROJECTS */}
-          <a 
-           href="#Projects"
-             className={currentPage === 'Projects' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
-             onClick={() => handlePageChange('Projects')}
-          >
-            <span className="mdc-list-item__ripple"></span>
-            <i className="material-icons mdc-list-item__graphic" aria-hidden="true">
-                  {/* change me */}
-              send
-            </i>
-            <span className="mdc-list-item__text">Projects</span>
-          </a>
-          {/* CONTACT  */}
-          <a 
-          href="#Contact"
-             className={currentPage === 'Contact' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
-             onClick={() => handlePageChange('Contact')}
-          >
-            <span className="mdc-list-item__ripple"></span>
-            <i className="material-icons mdc-list-item__graphic" aria-hidden="true">
-                  {/* change me */}
-              drafts
-            </i>
-            <span className="mdc-list-item__text">Contact</span>
-          </a>
-        </nav>
-      </div>
-    </aside>
+
+<nav className="navbar" role="navigation" aria-label="main navigation">
+  <div className="navbar-brand">
+    <a className="navbar-item" href="https://bulma.io">
+      {/* <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" /> */}
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" className="navbar-menu center">
+    <div className="navbar-start">
+      <a 
+      href="#Home"
+      className={currentPage === 'Home' ? 'navbar-item active' : 'navbar-item'}
+      onClick={() => handlePageChange('Home')}>
+        Home
+      </a>
+
+      <a 
+      href="#AboutMe"
+      className={currentPage === 'AboutMe' ? 'navbar-item active' : 'navbar-item'}
+      onClick={() => handlePageChange('AboutMe')}>
+       About Me
+      </a>
+
+      <a 
+      href="#Projects"
+      className={currentPage === 'Projects' ? 'navbar-item active' : 'navbar-item'}
+      onClick={() => handlePageChange('Projects')}>
+       Projects
+      </a>
+
+      <a 
+        href="#Contact"
+        className={currentPage === 'Contact' ? 'navbar-item active' : 'navbar-item'}
+        onClick={() => handlePageChange('Contact')}>
+       Contact
+      </a>
+
+    </div>
+  </div>
+</nav>
   );
 }
