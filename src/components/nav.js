@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/nav.css";
+// import Container from "./container"
 
-export default function Nav() {
+export default function Nav({ currentPage, handlePageChange }) {
   return (
     // <ul>
     //     <li>About Me</li>
@@ -17,9 +18,25 @@ export default function Nav() {
       </div>
       <div className="mdc-drawer__content">
         <nav className="mdc-list">
+            {/* HOME */}
+            <a
+            href="#Home"
+            onClick={() => handlePageChange('Home')}
+            className={currentPage === 'Home' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
+            aria-current="page">
+            <span className="mdc-list-item__ripple"></span>
+            <i className="material-icons mdc-list-item__graphic" aria-hidden="true">
+                {/* change me */}
+              inbox
+            </i>
+            <span className="mdc-list-item__text">Home</span>
+          </a>
+
+            {/* ABOUT ME */}
           <a
-            className="mdc-list-item mdc-list-item--activated"
-            href="#"
+          href="#AboutMe"
+           className={currentPage === 'AboutMe' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
+           onClick={() => handlePageChange('AboutMe')}
             aria-current="page"
           >
             <span className="mdc-list-item__ripple"></span>
@@ -29,7 +46,12 @@ export default function Nav() {
             </i>
             <span className="mdc-list-item__text">About Me</span>
           </a>
-          <a className="mdc-list-item" href="#">
+          {/* PROJECTS */}
+          <a 
+           href="#Projects"
+             className={currentPage === 'Projects' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
+             onClick={() => handlePageChange('Projects')}
+          >
             <span className="mdc-list-item__ripple"></span>
             <i className="material-icons mdc-list-item__graphic" aria-hidden="true">
                   {/* change me */}
@@ -37,7 +59,12 @@ export default function Nav() {
             </i>
             <span className="mdc-list-item__text">Projects</span>
           </a>
-          <a className="mdc-list-item" href="#">
+          {/* CONTACT  */}
+          <a 
+          href="#Contact"
+             className={currentPage === 'Contact' ? 'mdc-list-item mdc-list-item--activated' : 'mdc-list-item'}
+             onClick={() => handlePageChange('Contact')}
+          >
             <span className="mdc-list-item__ripple"></span>
             <i className="material-icons mdc-list-item__graphic" aria-hidden="true">
                   {/* change me */}
