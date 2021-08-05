@@ -1,0 +1,23 @@
+.title {
+    text-align: center;
+    font-size: 8rem;
+}
+
+#sentenceOne {
+    margin-left: 1rem;
+}
+
+#sentenceTwo {
+    margin-top: 4rem;
+    margin-right: 1rem;
+}
+
+#sentenceThree {
+    margin-top: 8rem;
+    margin-right: 1rem;
+}
+
+#sentenceFour {
+    margin-top: 12rem;
+    margin-right: 1rem;
+}

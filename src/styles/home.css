@@ -1,0 +1,29 @@
+
+    .char {
+        --name: fall;
+        --dur: 600ms;
+        --del: calc(var(--char-index) * -0.05s);
+        --tf: cubic-bezier(0.165, 0.44, 0.64, 1);
+    }
+
+    @keyframes fall {
+        0% {
+            transform: rotateY(-25deg);
+        }
+
+        25% {
+            transform: translateY(2%) rotateY(25deg);
+        }
+
+        50% {
+            transform: rotateY(-25deg);
+        }
+
+        75% {
+            transform: translateY(4%) rotateY(25deg);
+        }
+
+        100% {
+            transform: rotateY(-25deg);
+        }
+    }
