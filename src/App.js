@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/app.css'
-// import Header from './components/header.js'
+import Header from './components/header'
 // import Nav from './components/nav'
 // import Projects from './components/pages/projects'
 // import Contact from './components/pages/contact'
@@ -10,6 +10,7 @@ import Container from './components/container'
 
 function App() {
   return <>
+        <Header />
         <Container />
       </>
 }
