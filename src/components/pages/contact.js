@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../styles/pages.css";
 
 
@@ -96,36 +95,13 @@ export default function Contact() {
         <input id="submit_button" type="submit" value="Send email" />
       </form>
 
-      <li class="li">
-        <i class="fas fa-phone"></i>
-        <a href="tel:856-556-5208">(856) 556-5208</a>
-      </li>
-      <li class="li">
-        <a href="mailto:keith.l.watford@gmail.com">
-          {/* <i class="fas fa-envelope"></i> */}
-          <FontAwesomeIcon icon={["fas", "fa-envelope"]} />
-          Email
-        </a>
-      </li>
-      <li class="li">
-        <a
-          href="https://github.com/Keith-L-Watford"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" "}
-          <i class="fab fa-github"> </i>GitHub
-        </a>
-      </li>
-      <li class="li">
-        <a
-          href="https://www.linkedin.com/in/keith-watford-5654b8208/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i class="fab fa-linkedin"></i>LinkedIn
-        </a>
-      </li>
+      <div class="tile is-ancestor" id="links">
+<br />
+<br />
+<br />
+
+
+</div>
     </div>
   );
 }
