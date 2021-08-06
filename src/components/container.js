@@ -5,9 +5,10 @@ import AboutMe from "./pages/aboutMe";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Home from "./pages/home";
+import Footer from "./pages/footer";
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("AboutMe");
 
   const renderPage = () => {
     if (currentPage === "Home") {
@@ -33,6 +34,8 @@ export default function PortfolioContainer() {
       <div>
       {renderPage()}
       </div>
+      <br />
+      <Footer />
     </>
   );
 }
