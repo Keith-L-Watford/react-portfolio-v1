@@ -5,3 +5,95 @@
     --secondary: #B6C9F0;
     --tertiary: #EAC100;
 }
+
+#myName {
+    color: var(--light);
+    text-align: left;
+    margin-left: 1.75rem;
+}
+
+div {
+    background-color: var(--background);
+  }
+
+.is-background {
+    background-color: var(--background);
+}
+
+.is-light {
+    color: var(--light);
+}
+
+.is-primary {
+    color: var(--primary);
+}
+
+.is-secondary {
+    color: var(--secondary);
+}
+
+.is-tertiary {
+    color: var(--tertiary);
+}
+
+.block:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.title {
+    color: var(--tertiary);
+}
+
+.subtitle {
+    color: var(--secondary);
+}
+
+#my-name {
+    text-align: center;
+    margin-top: 2.5rem;
+    color: var(--tertiary);
+}
+
+#nav-bar {
+    margin-right: 2rem;
+}
+
+.navbar-item {
+    color: var(--tertiary);
+}
+
+.card {
+    background-color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.card h1 {
+    color: var(--tertiary);
+
+}
+
+.about-me-text {
+    color: var(--secondary);
+}
+
+.is-child {
+    background-color: var(--primary);
+}
+
+a {
+    color: var(--secondary);
+}
+
+p {
+    color: var(--light);
+}
+
+.fas,
+.fab {
+    color: var(--secondary);
+}
+
+li,
+.li {
+    color: var(--light);
+}
