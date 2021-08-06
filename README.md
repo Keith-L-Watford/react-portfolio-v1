@@ -1,7 +1,7 @@
 # React Portfolio (version 1)
 
 ## Description
-
+I was assigned to create portfolio website using React.  
 
 ## Table of Contents
 - [Installation](#installation)
@@ -11,10 +11,10 @@
 - [License](#license)
 
 ## Installation
-
+No installs required to view the deployed app. However if you download locally, bring a movie and some popcorn so you have something to do while react installs with an npm i.
 
 ## Usage
-Click <a href="!!!!!!!!" target="_blank">here</a> to see the deployed portfolio. 
+Click <a href="https://keith-l-watford.github.io/react-portfolio-v1/" target="_blank">here</a> to see the deployed portfolio. 
 
 ## Notes
 I sort of ran out of time with this iteration. I intended on using a new css framework and I decided on Material.io but I couldnt set up the nav bar in the way I wanted to. Luckily I did allot some time to switch course back to bulma incase I needed to default to a framework I was already very familiar with and import some styles/colors that I like. 
